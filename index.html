@@ -129,15 +129,41 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="text-center py-6 text-gray-500 text-sm">
-      <div class="flex justify-center">
-        <img
-          src="./img/logo.png"
-          alt="Logo de la empresa"
-          class="w-100 md:w-80"
-        />
+    <footer class="py-6 text-gray-400 text-sm border-t border-gray-800">
+      <div
+        class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <!-- LOGO -->
+        <div class="flex items-center">
+          <img src="./img/logo.png" alt="Logo Codearg" class="w-32 md:w-40" />
+        </div>
+
+        <!-- BOTÓN EMAIL -->
+        <a
+          href="mailto:contacto@codearg.com"
+          class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition"
+        >
+          <!-- ICONO -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M2.25 6.75A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25v.243l-9.75 5.85-9.75-5.85V6.75z"
+            />
+            <path
+              d="M2.25 9.678v7.572A2.25 2.25 0 004.5 19.5h15a2.25 2.25 0 002.25-2.25V9.678l-9.75 5.85-9.75-5.85z"
+            />
+          </svg>
+
+          contacto@codearg.com
+        </a>
       </div>
-      <small> © 2026 Anti-DevPresión - Mentoría Full Stack</small>
+
+      <!-- COPYRIGHT -->
+      <div class="text-center mt-4 text-gray-500">© 2026 - Codearg</div>
     </footer>
   </body>
 </html>
