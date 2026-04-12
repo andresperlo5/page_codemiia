@@ -1,0 +1,17 @@
+.div-img {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.div-img img {
+  width: 80%;
+}
+
+.div-img-principal {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.div-img-principal img {
+  width: 50%;
+}
