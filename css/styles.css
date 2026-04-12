@@ -16,6 +16,16 @@
   width: 50%;
 }
 
+.div-video {
+  width: 50vw;
+  height: 90vh;
+}
+
+.div-video video {
+  width: 50vw;
+  height: 80vh;
+}
+
 @media (max-width: 600px) {
   .div-img-principal img {
     width: 90%;
