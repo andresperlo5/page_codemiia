@@ -15,6 +15,45 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+
+      fbq("init", "1800970937544080");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1800970937544080&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Meta Pixel Code -->
   </head>
 
   <body class="bg-gray-900 text-white font-sans">
@@ -119,8 +158,9 @@
     <section class="py-16 px-6">
       <div class="max-w-xl mx-auto">
         <a
-          href="https://calendar.app.google/B7vJwh15cKxLuq416"
+          href="https://calendar.app.google/B7vJwh15cKxLuq416?utm_source=facebook&utm_medium=social&utm_campaign=mentoria"
           target="_blank"
+          onclick="fbq('track', 'Lead')"
           class="block w-full bg-green-500 hover:bg-green-600 text-black font-bold py-4 px-6 rounded-xl text-lg transition text-center"
         >
           Reservá una entrevista gratuita conmigo acá 👇
@@ -133,17 +173,14 @@
       <div
         class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4"
       >
-        <!-- LOGO -->
         <div class="flex items-center">
           <img src="./img/logo.png" alt="Logo Codearg" class="w-100 md:w-60" />
         </div>
 
-        <!-- BOTÓN EMAIL -->
         <a
           href="mailto:contacto@codearg.com"
           class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition"
         >
-          <!-- ICONO -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-5 h-5"
@@ -162,7 +199,6 @@
         </a>
       </div>
 
-      <!-- COPYRIGHT -->
       <div class="text-center mt-4 text-gray-500">© 2026 - Codearg</div>
     </footer>
   </body>
